@@ -1,0 +1,227 @@
+@import "fonts"
+@import "libs"
+@import "base"
+@import "vars"
+
+
+.container
+    max-width: 960px
+    padding: 0 10px !important
+    margin: 0 auto
+    
+    img 
+        width: 100%
+        height: auto
+
+.header-container
+    max-width: 960px
+    padding: 0 10px
+    margin: 0 auto
+    display: flex
+    justify-content: space-between 
+    
+    .logo
+        padding-top: 10px  
+    #menu-checkbox
+        display: none
+    nav
+        width: 460px
+
+    ul 
+        display: flex
+    li 
+        list-style-type: none
+        display: flex
+   
+        a
+            
+            text-decoration: none
+            font-size: 16px
+            color: #000000
+            padding: 70px 2px 15px 18px
+            border-radius: 0 0 5px 5px
+            &:hover 
+                background-color: #fadbd8
+            &.active 
+                background-color: $accent 
+                color: white
+
+.title
+    margin: 0 auto
+    padding: 55px 25px
+    text-align: center
+
+.top-slide
+    margin-top: 10px
+    
+    background-image: url("../img/main.gif")
+    background-repeat: no-repeat
+    background-position: center
+    background-size: 100% auto
+    min-height: 335px
+.gallery
+    text-align: center
+    
+
+.grid-container   
+    margin: 0 auto   
+    display: grid
+    grid-gap: 20px
+    grid-template-columns: auto auto auto auto auto
+    box-sizing: border-box
+.grid-item
+
+    margin: 25px 0
+    
+    
+    img 
+        border: 1px solid transparent 
+        &:hover
+            border: 1px solid $accent 
+            cursor: pointer
+        
+.description
+   
+    margin: 25px auto
+    text-align: center
+    width: 85%
+
+.parameters
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: 35px 35px 35px 35px
+    grid-column-gap: 20px
+    grid-row-gap: 2px
+    grid-auto-flow: column
+    grid-auto-rows: 35px
+    margin-bottom: 55px
+    .item-head
+        color: white
+        text-align: left
+        padding: 8px 20px
+        background-color: $accent
+        border-radius: 5px 5px 0 0
+
+    .item
+        display: flex
+        justify-content: space-between
+        padding: 8px 20px
+        background: #eeeeee
+        .title_parameters
+            text-transform: uppercase
+            color: #888888
+            font-size: 18px
+        .parameter
+            
+            font-size: 14px
+            color: #000000
+            
+        .planskiss
+            color: #888888
+            a
+                text-decoration: none
+                color: #717ca1
+                &:hover
+                    color: $accent
+        .download
+            color: #888888
+            i
+                &:hover
+                    color: $accent
+                    cursor: pointer
+             
+
+
+.form-intresse
+    display: grid
+    grid-template-columns: 1fr 1fr
+    grid-template-rows: auto auto auto auto auto auto
+    grid-column-gap: 20px
+    grid-row-gap: 15px
+    grid-auto-flow: row
+    
+
+    .form-item
+        text-align: left
+
+    input[type=text] 
+        width: 100%
+        padding: 10px
+        height: 35px
+        border: 1px solid #ccc
+        border-radius: 4px
+        resize: vertical 
+
+    .form-item-textarea
+        grid-column-start: 1
+        grid-column-end: 3
+        text-align: left
+        height: 150px
+        
+    
+    textarea
+        padding: 10px
+        width: 100%
+        height: 150px
+         border: 1px solid #ccc
+        border-radius: 4px
+        resize: vertical 
+    
+    .form-item-submit
+        margin-top: 15px
+        grid-column-start: 1
+        grid-column-end: 3
+        text-align: center
+        height: 35px
+
+    input[type=submit] 
+        width: 100%
+        background-color: $accent
+        color: white
+        padding: 14px 20px
+        margin: 8px 0
+        border: none
+        border-radius: 4px
+        cursor: pointer
+    
+.banner
+    width: 100%
+    height: 280px
+    background: #717ca1
+    margin-top: 150px
+
+    .intro
+        background-image: url("../img/bg_banner.png")
+        background-repeat: no-repeat
+        background-position: center
+        background-size: 100% auto
+        height: 280px
+        text-align: center
+        color: white
+
+        h1
+            padding-top: 85px
+            margin: 0 auto
+            width: 75%
+            
+
+
+.footer_menu
+    display: grid
+    grid-template-columns: 1fr 1fr 1fr 1fr
+    grid-column-gap: 20px   
+    margin: 50px 0
+    font-size: 14px
+    li 
+        list-style-type: none
+        padding: 2px
+
+.footer_item
+    a
+        text-decoration: none
+        color: #000000
+        &:hover
+            color: $accent
+    
+
+@import "media" // Всегда в конце
